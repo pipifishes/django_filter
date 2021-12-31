@@ -7,7 +7,7 @@ parse是解析器对象，当django运行时，它将所有标签和过滤器进
 token是被解析的对象，是模板文件使用标签时所传递的数据对象，主要包括标签名和数据内容
 split_contents()：是Django的内置办法，从中获取数据，并将value传递给自定义模板节点类ReversalNode
 '''
-# 创建模板对象
+# 创建模板对象。
 register = template.Library()
 # 类的继承；定义模板节点类
 class ReversalNode(template.Node):
